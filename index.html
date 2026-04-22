@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dev Detective</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>✨ Dev Detective</h1>
+
+  <div class="toggle">
+    <button id="searchBtn" class="active" onclick="setMode('search')">Search</button>
+    <button id="battleBtn" onclick="setMode('battle')">Battle</button>
+  </div>
+
+  <div class="inputs">
+    <input id="user1" placeholder="Enter username">
+    <input id="user2" placeholder="Enter opponent" class="hidden">
+  </div>
+
+  <button class="primary" onclick="handleAction()">Search</button>
+
+  <div id="status"></div>
+  <div id="result" class="cards"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
